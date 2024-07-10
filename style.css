@@ -22,6 +22,9 @@ body{
     align-items: center;
     justify-content: space-between;
 }
+.hero h2{
+    font-weight: 100;
+}
 .hero span{
     color: green;
     font-weight: bold;
@@ -30,12 +33,27 @@ body{
     display: flex;
     gap: 20px;
 }
+.hero .navlinks a:hover {
+    color: green;
+    /* background: white; */ 
+}
+.hero .navlinks .active{
+    color: green;
+    font-weight: bold;
+    
+}
 .hero .chat_box{
     background: green;
     padding: 10px 15px;
     border-radius: 2px;
     font-weight: 400;
 }
+.hero .chat_box:hover{
+    background: white;
+    color: black;
+    font-weight: 00;
+}
+
 
 /* section--part--start */
 
@@ -61,13 +79,19 @@ body{
     color: green;
 
  }
-.text-part .btn, .text-part #download_btn{
+#download_btn{
     border: none;
     color: aliceblue;
     background-color: green;
     padding: 10px 15px;
     font-weight: 400;
     border-radius: 2px;
+}
+ .text-part #download_btn:hover{
+    background: white;
+    color: black;
+    font-weight: 00;
+
 }
 .intro .img-box{
     width: 100%;
