@@ -1,0 +1,55 @@
+body{
+    margin: 0;
+    padding : 0;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 4px;
+}
+
+*{
+    background: black;
+    /* margin: 0;
+    padding: 0; */
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    list-style: none;
+}
+
+/* Header--part */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.hero h2{
+    font-weight: 100;
+}
+.hero span{
+    color: green;
+    font-weight: bold;
+}
+.navlinks{
+    display: flex;
+    gap: 20px;
+}
+.hero .navlinks a:hover {
+    color: green;
+    /* background: white; */ 
+}
+.hero .navlinks .active{
+    color: green;
+    font-weight: bold;
+    
+}
+.hero .chat_box{
+    background: green;
+    padding: 10px 15px;
+    border-radius: 2px;
+    font-weight: 400;
+}
+.hero .chat_box:hover{
+    background: white;
+    color: black;
+    font-weight: 00;
+}
