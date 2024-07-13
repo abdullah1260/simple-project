@@ -35,7 +35,6 @@ body{
 }
 .hero .navlinks a:hover {
     color: green;
-    /* background: white; */ 
 }
 .hero .navlinks .active{
     color: green;
@@ -71,7 +70,6 @@ body{
 }
 .intro .text-part h1 {
     font-size: 30px;
-    /* margin: 0 auto; */
     font-weight: 600;
     word-spacing: 5px;
 }
@@ -106,4 +104,53 @@ body{
 .intro p{
     text-align: justify;
     margin-bottom: 30px;
+    line-height: 25px;
+    font-size: 18px;
+}
+/* responsive for small device --sm */
+
+@media(max-width:576px){
+    body {
+        margin: 0 15px ;
+
+    }
+    .navlinks{
+        display: none;
+    }
+    .intro{
+        display: flex;
+        flex-direction: column;
+        gap: 90px;
+        padding: 70px 0 ;
+    }
+    .img-box img{
+        width: 70%;
+    }
+}
+
+/* responsive for medium device --md */
+@media(577px < width <=768px ){
+    body {
+        margin: 0 20px ;
+
+    }
+    .intro{
+        display: flex;
+        flex-direction: column;
+        gap: 90px;
+        padding: 70px 0 ;
+    }
+    .img-box img{
+        width: 65%;
+    }
+}
+/* responsive for large device --l */
+@media(769px <= width <=1385px){
+    body{
+        margin: 0 20px;
+    }
+
+}
+.img-box img{
+    width: 70%;
 }
